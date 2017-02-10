@@ -40,7 +40,7 @@
 	javadoc.name=xxxx
 
 ## **4.在需要上传的model的build.gradle的最下面添加：**
- 	apply from: "https://github.com/pengyuantao/bintrayUpload/blob/master/bintrayUpload.gradle"
+ 	apply from: "https://raw.githubusercontent.com/pengyuantao/bintrayUpload/master/bintrayUpload.gradle"
 
 ## **5.在Terminal中运行以下命令： **
  	gradlew install
