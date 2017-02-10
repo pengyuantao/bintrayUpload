@@ -38,5 +38,14 @@
 	project.gitUrl=https://github.com/xxxxx/xxxx.git
 	#生成的javadoc名称
 	javadoc.name=xxxx
-## **4.在需要上传的model的build.gradle的最下面添加： **
- 	apply from: "bintrayUpload.gradle"
+
+## **4.在需要上传的model的build.gradle的最下面添加：**
+ 	apply from: "https://github.com/pengyuantao/bintrayUpload/blob/master/bintrayUpload.gradle"
+
+## **5.在Terminal中运行以下命令： **
+ 	gradlew install
+ 	gradlew bintrayUpload
+    
+## 常见问题：
+  1. javadoc失败，查看Terminal中编译产生的错误，修改注释，然后重新编译。
+  2. java.lang.UnsupportedClassVersionError: com/android/build/gradle/AppPlugin : Unsupported major.minor version 52.0 修改AndroidStudio2.2的java环境为java8
