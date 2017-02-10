@@ -1,10 +1,10 @@
-##### **1.在project的build.gradle中dependencies节点添加：**
+## **1.在project的build.gradle中dependencies节点添加：**
 
 	classpath 'com.github.dcendents:android-maven-gradle-plugin:1.4.1' //生成Maven所需文件
 
 	classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.6' //上传Maven生成的文件到Bintray
 
-##### **2.在projcet的local.properties添加：**
+## **2.在projcet的local.properties添加：**
 	#配置bintray账号相关信息
 	#bintray用户名,不是登陆邮箱,是个人中心右上角显示的名字
 	bintray.user=xxxxx
@@ -20,7 +20,7 @@
 	#邮箱
 	developer.email=xxxxxxxxxxxxxxx@126.com
 
-##### **3.在需要上传的model中创建project.properties文件,并添加以下内容：**
+## **3.在需要上传的model中创建project.properties文件,并添加以下内容：**
 	#project
 	#仓库名称，就是在bintray官网建立的仓库的名称
 	project.repositoryName=maven
@@ -38,3 +38,5 @@
 	project.gitUrl=https://github.com/xxxxx/xxxx.git
 	#生成的javadoc名称
 	javadoc.name=xxxx
+## **4.在需要上传的model的build.gradle的最下面添加： **
+ 	apply from: "bintrayUpload.gradle"
