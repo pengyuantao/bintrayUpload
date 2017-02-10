@@ -20,7 +20,7 @@
 	#邮箱
 	developer.email=xxxxxxxxxxxxxxx@126.com
 
-##### **3.在需要上传的model中创建project.properties文件：**
+##### **3.在需要上传的model中创建project.properties文件,并添加以下内容：**
 	#project
 	#仓库名称，就是在bintray官网建立的仓库的名称
 	project.repositoryName=maven
