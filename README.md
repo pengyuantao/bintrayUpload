@@ -49,3 +49,4 @@
 ## 常见问题：
   1. javadoc失败，查看Terminal中编译产生的错误，修改注释，然后重新编译。
   2. java.lang.UnsupportedClassVersionError: com/android/build/gradle/AppPlugin : Unsupported major.minor version 52.0 修改AndroidStudio2.2的java环境为java8
+  3.如果库文件有版本更新，需要修改model中的versionName的值。
